@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parasuraman Portfolio</title>  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; transition: 0.4s; }
+    header { background: #222; color: white; padding: 25px; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 25px; background: #333; padding: 12px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .section { padding: 40px; max-width: 1000px; margin: auto; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: scale(1.03); }
+    footer { text-align: center; padding: 20px; background: #222; color: white; margin-top: 30px; }
+
+    /* Dark Mode */
+    .dark { background: #111; color: white; }
+    .dark nav { background: #000; }
+    .dark .card { background: #222; color: white; }
+
+    /* Animations */
+    .fade-in { animation: fade 1.2s ease-in-out; }
+    @keyframes fade { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }
+
+    .resume-btn { padding:10px 20px; background:#0a84ff; color:white; border-radius:8px; text-decoration:none; font-weight:bold; }
+
+    /* Contact Form */
+    form input, form textarea { width:100%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc; }
+    form button { padding:12px 25px; background:#0a84ff; border:none; border-radius:8px; color:white; cursor:pointer; }
+  </style>  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script></head><body>
+  <header class="fade-in">
+    <h1>Parasuraman Portfolio</h1>
+    <p>Full Stack Developer | Java Programmer | Data Analytics Enthusiast</p>
+    <button onclick="toggleDarkMode()" style="margin-top:12px; padding:10px 20px; border:none; background:#555; color:white; border-radius:8px; cursor:pointer;">Toggle Dark Mode</button>
+  </header>  <nav class="fade-in">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>Hi! I am Parasuraman, a passionate developer skilled in HTML, CSS, Java, JavaScript, Python, and Data Analytics. I enjoy building modern, responsive websites and working with real-world data to solve problems.</p>
+  </section>  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>Java, JavaScript, Python</li>
+      <li>Excel, Word</li>
+      <li>SQL, Power BI</li>
+      <li>Data Analytics</li>
+      <li>Ethics in Java (Certified)</li>
+    </ul>
+  </section>  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website showcasing my skills, projects, and certifications.</p>
+      </div><div class="card">
+    <h3>Crop Yield Prediction (Deep Learning)</h3>
+    <p>Developed a model using Python and Machine Learning techniques to predict crop yield.</p>
+  </div>
+
+  <div class="card">
+    <h3>Library Management System</h3>
+    <p>Created using Java (OOP) & database integration.</p>
+  </div>
+
+  <div class="card">
+    <h3>Java Certification Project</h3>
+    <p>Hands-on Java programming as part of Ethics in Java certificate.</p>
+  </div>
+
+  <div class="card">
+    <h3>Data Analytics Practice</h3>
+    <p>Worked with Excel, Power BI, and analytics-based tasks.</p>
+  </div>
+</div>
+
+  </section>  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Email: <b>psrn2005@gmail.com</b></p><h3>Send a Message</h3>
+<form action="https://formsubmit.co/your-email" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+  </section>  <div style="text-align:center; margin-bottom:25px;">
+      <a class="resume-btn" href="resume.pdf" download>Download My Resume</a>
+  </div>  <footer>
+    <p>© 2025 Parasuraman Portfolio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
